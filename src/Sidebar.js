@@ -9,11 +9,13 @@ import StorefrontIcon from "@mui/icons-material/Storefront";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 // import userEvent from "@testing-library/user-event";
 import { ExpandMoreOutlined } from "@mui/icons-material";
+import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="sidebar">
-      <SidebarRow src="{}" title="Bharatchandran" />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="COVID-19 Indformation Center"
