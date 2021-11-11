@@ -6,10 +6,12 @@ function App() {
     <div className="App">
       <Header />
 
-      {/* App body */}
-      {/* Sidebar */}
-      {/* Feed */}
-      {/* Widget */}
+      <div className="app__body">
+        {/* App body */}
+        {/* Sidebar */}
+        {/* Feed */}
+        {/* Widget */}
+      </div>
     </div>
   );
 }
